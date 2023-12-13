@@ -1,38 +1,260 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: #edf0f0;
+  height: 100%;
+}
+.header{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ height: 10%;
+ background-color:#23ccc4;
+ margin: 0px;
+ width: 100%;
+}
+.heading{
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.transactions-table-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sub-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.query-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 8px;
+  margin-top: 25px;
+}
+
+.hr-line {
+  border: 1px solid #23ccc4;
+  width: 100%;
+}
+
+.input-element {
+  background-color: #23ccc4;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 4px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 6px;
+  border-radius: 25px;
+}
+
+.table-header {
+  background-color: #23ccc4;
+}
+
+.header-row {
+  padding: 10px;
+  height: 16%;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.row {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.id {
+  width: 10%;
+  text-align: center;
+  padding: 4px;
+  border: 2px solid #23ccc4;
+}
+
+.title {
+  width: 35%;
+  padding: 4px;
+  border: 2px solid #23ccc4;
+}
+
+.description {
+  width: 45%;
+  padding: 4px;
+  border: 2px solid #23ccc4;
+}
+
+.price {
+  width: 15%;
+  text-align: center;
+  padding: 4px;
+  border: 2px solid #23ccc4;
+}
+
+.category {
+  width: 20%;
+  text-align: center;
+  padding: 4px;
+  border: 2px solid #23ccc4;
+}
+
+.image {
+  width: 25%;
+  text-align: center;
+  padding: 4px;
+  border: 2px solid #23ccc4;
+}
+
+.image-ele {
+  height: 50px;
+  width: 50px;
+}
+
+.below-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 25px;
+ 
+}
+
+.btn {
+  background-color: #23ccc4;
+  border-radius: 6px;
+  border: none;
+  padding: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.sub-section{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) { 
+  .header{
+    height: 6%;
   }
-  to {
-    transform: rotate(360deg);
+  .heading{
+    font-size: 20px;
   }
+  .transactions-table-container{
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .sub-title{
+    font-size: 16px;
+    margin:4px;
+  }
+  .query-section{
+    justify-content: space-between;
+    margin: 4px;
+    margin-top: 13px;
+  }
+  .input-element {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  .label {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .table-container {
+    margin-top: 4px;
+    border-radius: 13px;
+  }
+  .header-row {
+    padding: 6px;
+    height: 10%;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .row {
+    padding: 6px;
+    font-size: 8px;
+    font-weight: 200;
+  }
+  .id {
+    width: 6%;
+    text-align: center;
+    padding: 2px;
+  }
+  .title {
+    width: 18%;
+    padding: 2px;
+  }
+  
+  .description {
+    width: 30%;
+    padding: 2px;
+  }
+  
+  .price {
+    width: 8%;
+    padding: 2px;
+  }
+  
+  .category {
+    width: 12%;
+    padding: 2px;
+  }
+  
+  .image {
+    width: 18%;
+    text-align: center;
+    padding: 2px;
+  }
+  
+  .image-ele {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .below-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+   
+  }
+  
+  .btn {
+    background-color: #23ccc4;
+    border-radius: 6px;
+    border: none;
+    padding: 2px;
+    font-weight: 300;
+    font-size: 10px;
+    margin-right: 5px;
+  }
+  .sub-section{
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+  
 }
